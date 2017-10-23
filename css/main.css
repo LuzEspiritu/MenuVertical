@@ -1,0 +1,65 @@
+/*reglas de estilos*/
+/*#f9a91a--->Laboratoriaa
+#f5f5f0--->color de fondo
+#e0e0d1-->color de active
+font-family--> sans-serif  */
+
+/*selector de etiquetas, body*/
+body{
+font-family: sans-serif;
+
+}
+nav{
+  /*outline: 1px solid red;*/
+  width: 200px;
+}
+
+ul{
+  /*contorno al rededor de una etiqueta*/
+ /*outline: 1px solid yellow;*/
+ /*quitar las viñetas*/
+ list-style: none;
+ /*quitando sus estilos predefinidos de margin y padding*/
+ margin:0;
+ padding: 0;
+line-height: 30px;
+}
+/*li, etiqueta de tipo bloque*/
+li{
+  /*outline: 1px solid red;*/
+  background: #f5f5f0;}
+/*los estados de los enlaces:link visited, hover Active*/
+
+/*las etiquetas inline solo ocupan el espacio que necesitan*/
+a{
+  /*outline: 1px solid blue;*/
+  /*cambiarla a display block*/
+  display: block;
+  /*quitarle subrayado*/
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+}
+/*pseudoclase: first-child*/
+ul li:first-child{
+background: #f9a91a;
+}
+/*hover, cuando paso por el mouse*/
+a:hover{
+background:#e0e0d1;
+}
+/*lectura de izq a derecha*/
+ul li:first-child a{
+color:#fff;
+}
+ul li:first-child a:hover{
+color:#000;
+}
+/*al darle click: Active**/
+a:active{
+background:#333;
+color:#fff;
+}
+ul li:first-child a:active{
+color:#fff;
+}
